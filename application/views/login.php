@@ -7,7 +7,7 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <a><b>Sistem</b>Kehadiran</a>
+            <a><b>Sistem</b>KPRI</a>
         </div>
         <?php if ($this->session->flashdata('message')) : ?>
             <div class="alert alert-danger" role="alert">
