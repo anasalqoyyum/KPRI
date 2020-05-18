@@ -35,19 +35,19 @@
                     <!-- Add the bg color to the header using any of the bg-* classes -->
                     <div class="widget-user-header bg-primary">
                         <h3 class="widget-user-username">Selamat Datang</h3>
-                        <h5 class="widget-user-desc">Ke Dalam Sistem Informasi Kehadiran Pegawai KPRI</h5>
+                        <h5 class="widget-user-desc">Ke Dalam Sistem Informasi Kehadiran Pegawai KPRI UNDIP</h5>
                     </div>
                     <div class="widget-user-image">
-                        <img class="" src="<?php echo base_url() . 'dist/img/chika.jpg' ?>" alt="User Avatar" style="border: 0px ">
+                        <img class="" src="<?php echo base_url() . 'dist/img/undip.png' ?>" alt="User Avatar" style="border: 0px ">
                     </div>
                     <div class="card-footer">
                         <div class="">
                             <!-- /.col -->
                             <div class="Widget-user-username">
                                 <div class="description-block">
-                                    <h3 class="description-header">KPRI</h3>
-                                    <h5 class="description-header">ngga tau kepanjangane</h5>
-                                    <a class="description">BODOAMAT</a>
+                                    <h3 class="description-header">KPRI UNDIP</h3>
+                                    <h5 class="description-header">Koperasi Pegawai Republik Indonesia</h5>
+                                    <a class="description">Universitas Diponegoro</a>
                                 </div>
                                 <!-- /.description-block -->
                             </div>

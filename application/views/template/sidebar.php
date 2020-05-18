@@ -2,8 +2,8 @@
         <aside class="main-sidebar elevation-4 sidebar-light-primary">
             <!-- Brand Logo -->
             <a href="#" class="brand-link navbar-primary">
-                <img src="<?php echo base_url("dist/img/chika.jpg") ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light" style="color: white;">KPRI</span>
+                <img src="<?php echo base_url("dist/img/undip.png") ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light" style="color: white;">KPRI UNDIP</span>
             </a>
 
             <!-- Sidebar -->
