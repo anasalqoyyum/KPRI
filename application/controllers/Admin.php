@@ -6,4 +6,13 @@ class Admin extends MY_Controller {
 	{
 		$this->load->view('admin/overview');
 	}
+
+	public function daftar_staff(){
+		$this->load->view('admin/daftar_staff');
+	}
+
+	public function detail_staff()
+	{
+		$this->load->view('admin/detail_staff');
+	}
 }
