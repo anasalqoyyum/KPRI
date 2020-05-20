@@ -31,14 +31,6 @@
                         </li>
                         <li class="nav-header">INFORMASI KEHADIRAN PEGAWAI</li>
                         <li class="nav-item">
-                            <a href="<?php echo base_url('admin') ?>" class="nav-link <?php if($this->uri->segment(2)=="smartbook"){echo "active";}?>">
-                                <i class="nav-icon fas fa-th"></i>
-                                <p>
-                                    Data Kehadiran Karyawan
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a href="<?php echo base_url('admin/daftar_staff') ?>" class="nav-link <?php if($this->uri->segment(2)=="scan"){echo "active";}?>">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
@@ -47,7 +39,7 @@
                             </a>
                         </li>
                         <li class="nav-item has-treeview">
-                            <a href="<?php echo base_url('admin') ?>" class="nav-link <?php if($this->uri->segment(2)=="peminjaman"){echo "active";}?>">
+                            <a href="<?php echo base_url('import') ?>" class="nav-link <?php if($this->uri->segment(2)=="peminjaman"){echo "active";}?>">
                                 <i class="nav-icon fas fa-book"></i>
                                 <p>
                                     Import Excel
