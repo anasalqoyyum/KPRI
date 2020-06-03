@@ -39,17 +39,29 @@ class Import extends CI_Controller {
 
             $numrow = 1;
             foreach($sheet as $row){
-                            if($numrow > 1){
+                            if($numrow > 2){
                                 array_push($data, array(
-                                    'id_karyawan' => $row['A'],
-                                    'nama'      => $row['B'],
-                                    'jabatan'      => $row['C'],
+                                    'nama' => $row['A'],
+                                    'no_staff'      => $row['B'],
+                                    'departemen'      => $row['C'],
                                     'tanggal'      => $row['D'],
                                     'hari'      => $row['E'],
                                     'tipe'      => $row['F'],
                                     'jadwal'      => $row['G'],
                                     'tgl_masuk'      => $row['H'],
-                                    'tgl_keluar'      => $row['I'],
+                                    'masuk'      => $row['I'],
+                                    'tgl_keluar'      => $row['J'],
+                                    'keluar'      => $row['K'],
+                                    'lembur_masuk'      => $row['L'],
+                                    'lembur_keluar'      => $row['M'],
+                                    'jam_kerja'      => $row['N'],
+                                    'jam_lembur'      => $row['O'],
+                                    'jam_kurang'      => $row['P'],
+                                    'jam_terlambat'      => $row['Q'],
+                                    'jam_pulangcpt'      => $row['R'],
+                                    'jam_absen'      => $row['S'],
+                                    'hari_lupa_io'      => $row['T'],
+                                    'jam_ijin'      => $row['U'],
                                 ));
                     }
                 $numrow++;
