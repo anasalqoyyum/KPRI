@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 03, 2020 at 06:13 AM
+-- Generation Time: Jun 12, 2020 at 09:32 PM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -678,6 +678,56 @@ INSERT INTO `kehadiran_karyawan` (`no`, `id_karyawan`, `nama`, `jabatan`, `jml_h
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `rekap_absen`
+--
+
+CREATE TABLE `rekap_absen` (
+  `no` int(12) NOT NULL,
+  `nama` varchar(40) NOT NULL,
+  `no_staff` int(12) NOT NULL,
+  `jml_hadir` varchar(40) NOT NULL,
+  `jml_absen` varchar(40) NOT NULL,
+  `dtg_terlambat` varchar(40) NOT NULL,
+  `plg_awal` varchar(40) NOT NULL,
+  `lama_lembur` varchar(40) NOT NULL,
+  `kerja_4jam` varchar(40) NOT NULL,
+  `uang_makan` varchar(40) NOT NULL,
+  `jamke_1` varchar(40) NOT NULL,
+  `jamke_2` varchar(40) NOT NULL,
+  `jamke_3` varchar(40) NOT NULL,
+  `lama_lembur_manual` varchar(40) NOT NULL,
+  `jamlemburke_1` varchar(40) NOT NULL,
+  `jamlemburke_2` varchar(40) NOT NULL,
+  `jamlemburke_3` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `rekap_absen`
+--
+
+INSERT INTO `rekap_absen` (`no`, `nama`, `no_staff`, `jml_hadir`, `jml_absen`, `dtg_terlambat`, `plg_awal`, `lama_lembur`, `kerja_4jam`, `uang_makan`, `jamke_1`, `jamke_2`, `jamke_3`, `lama_lembur_manual`, `jamlemburke_1`, `jamlemburke_2`, `jamlemburke_3`) VALUES
+(1, 'Ani Purwaningsih', 3, '21', '0', '16', '0', '0', '21', '  210,000.00 ', '', '', '', '3', '  5,000.00 ', '  4,000.00 ', '  1,000.00 '),
+(2, 'Ruswadi', 5, '20', '1', '19', '0', '0', '20', '  200,000.00 ', '', '', '', '2', '  5,000.00 ', '  4,000.00 ', '0'),
+(3, 'Sri Rahayu', 6, '19', '2', '18', '0', '0', '19', '  190,000.00 ', '', '', '', '3', '  5,000.00 ', '  4,000.00 ', '  1,000.00 '),
+(4, 'Dwi Handayani', 7, '21', '0', '21', '0', '0', '21', '  210,000.00 ', '', '', '', '4', '  5,000.00 ', '  4,000.00 ', '  1,000.00 '),
+(5, 'Maziyah', 8, '16', '5', '15', '0', '0', '16', '  160,000.00 ', '', '', '', '5', '  5,000.00 ', '  4,000.00 ', '  1,000.00 '),
+(6, 'Eko Surwulandari', 10, '21', '0', '0', '0', '0', '21', '  210,000.00 ', '', '', '', '5', '  5,000.00 ', '  4,000.00 ', '  1,000.00 '),
+(7, 'Suryati', 11, '21', '0', '0', '0', '0', '21', '  210,000.00 ', '', '', '', '4', '  5,000.00 ', '  4,000.00 ', '  1,000.00 '),
+(8, 'Kozin', 12, '21', '0', '11', '0', '0', '14', '  140,000.00 ', '', '', '', '3', '  5,000.00 ', '  4,000.00 ', '  1,000.00 '),
+(9, 'Suwanti', 14, '20', '1', '7', '0', '0', '20', '  200,000.00 ', '', '', '', '2', '  5,000.00 ', '  4,000.00 ', '0'),
+(10, 'Triyati', 15, '20', '1', '8', '0', '0', '19', '  190,000.00 ', '', '', '', '1', '  5,000.00 ', '0', '0'),
+(11, 'Agus Lilik', 16, '19', '2', '9', '0', '0', '19', '  190,000.00 ', '', '', '', '3', '  5,000.00 ', '  4,000.00 ', '  1,000.00 '),
+(12, 'Purwaningsih', 18, '19', '2', '19', '0', '0', '19', '  190,000.00 ', '', '', '', '4', '  5,000.00 ', '  4,000.00 ', '  1,000.00 '),
+(13, 'Indriyani', 19, '20', '1', '11', '0', '0', '20', '  200,000.00 ', '', '', '', '2', '  5,000.00 ', '  4,000.00 ', '0'),
+(14, 'Qottimah', 20, '21', '0', '20', '0', '0', '21', '  210,000.00 ', '', '', '', '3', '  5,000.00 ', '  4,000.00 ', '  1,000.00 '),
+(15, 'Karwidi', 21, '19', '2', '2', '0', '0', '19', '  190,000.00 ', '', '', '', '4', '  5,000.00 ', '  4,000.00 ', '  1,000.00 '),
+(16, 'Rukun Slamet', 22, '20', '1', '15', '0', '0', '20', '  200,000.00 ', '', '', '', '2', '  5,000.00 ', '  4,000.00 ', '0'),
+(17, 'Veri Sunarso', 24, '20', '1', '19', '0', '0', '20', '  200,000.00 ', '', '', '', '3', '  5,000.00 ', '  4,000.00 ', '  1,000.00 '),
+(18, 'Heri Purnomo', 26, '13', '8', '7', '0', '0', '13', '  130,000.00 ', '', '', '', '4', '  5,000.00 ', '  4,000.00 ', '  1,000.00 ');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user`
 --
 
@@ -721,6 +771,13 @@ ALTER TABLE `kehadiran_karyawan`
   ADD KEY `no` (`no`);
 
 --
+-- Indexes for table `rekap_absen`
+--
+ALTER TABLE `rekap_absen`
+  ADD PRIMARY KEY (`no_staff`),
+  ADD UNIQUE KEY `UNIQUE` (`no`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -747,6 +804,12 @@ ALTER TABLE `detail_karyawan`
 --
 ALTER TABLE `kehadiran_karyawan`
   MODIFY `no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `rekap_absen`
+--
+ALTER TABLE `rekap_absen`
+  MODIFY `no` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `user`
