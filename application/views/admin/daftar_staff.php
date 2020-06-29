@@ -60,20 +60,33 @@
                                                         <th>Jumlah Absen</th>
                                                         <th>Terlambat Datang</th>
                                                         <th>Pulang Lebih Awal</th>
-                                                        <th>Pulang Terlambat</th>
-                                                        <th>Lama Kerja</th>
+                                                        <th>Lama Lembur</th>
                                                         <th>Uang Makan</th>
-                                                        <th>Aksi</th>
+
                                                     </tr>
                                                 </thead>
                                                 <tbody>
+                                                    <?php $i = 0; ?>
                                                     <?php foreach ($absen_karyawan as $a) { ?>
                                                         <tr>
-                                                            <td><?php echo $a->no; ?></td>
+                                                            <td>
+                                                            <?php
+                                                                $i++;
+                                                                echo $i;
+                                                            ?>
+                                                            </td>
                                                             <td><?php echo $a->nama; ?></td>
                                                             <td><?php echo $a->no_staff; ?></td>
-                                                            <td><?php echo $a->tipe; ?></td>
-                                                           
+                                                            <td><?php echo $a->jam_kerja; ?></td>
+                                                            <td><?php 
+                                                            $x = $a->jam_kerja; 
+                                                            $y = 20 - $x;
+                                                            echo $y;
+                                                            ?></td>
+                                                            <td><?php echo $a->masuk; ?></td>
+                                                            <td><?php echo $a->keluar; ?></td>
+                                                            <td>Data Belom Ada</td>
+                                                            <td>Data Belom Ada</td>
                                                         </tr>
                                                     <?php } ?>
                                                     
@@ -87,10 +100,8 @@
                                                         <th>Jumlah Absen</th>
                                                         <th>Terlambat Datang</th>
                                                         <th>Pulang Lebih Awal</th>
-                                                        <th>Pulang Terlambat</th>
-                                                        <th>Lama Kerja</th>
+                                                        <th>Lama Lembur</th>
                                                         <th>Uang Makan</th>
-                                                        <th>Aksi</th>
                                                     </tr>
                                                 </tfoot>
                                             </table>
