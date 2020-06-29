@@ -8,7 +8,8 @@ class Admin extends MY_Controller {
 	}
 
 	public function daftar_staff(){
-		$this->load->view('admin/daftar_staff');
+		$data['absen_karyawan'] = $this->db->query('select *, COUNT(tipe) as tipe from absen_karyawan where tipe = "Hari Kerja" group by no_staff') ->result();
+		$this->load->view('admin/daftar_staff',$data);
 	}
 
 	public function detail_staff()

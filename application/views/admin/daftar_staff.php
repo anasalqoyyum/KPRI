@@ -55,24 +55,41 @@
                                                     <tr>
                                                         <th>No</th>
                                                         <th>Nama Staff</th>
+                                                        <th>No Staff</th>
+                                                        <th>Jumlah Hadir</th>
+                                                        <th>Jumlah Absen</th>
+                                                        <th>Terlambat Datang</th>
+                                                        <th>Pulang Lebih Awal</th>
+                                                        <th>Pulang Terlambat</th>
+                                                        <th>Lama Kerja</th>
+                                                        <th>Uang Makan</th>
                                                         <th>Aksi</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <!-- <?php foreach ($smartbook as $s) { ?>
+                                                    <?php foreach ($absen_karyawan as $a) { ?>
                                                         <tr>
-                                                            <td><?php echo $s->id; ?></td>
-                                                            <td><?php echo $s->nama; ?></td>
-                                                            <td>
-                                                                <a href="<?php echo site_url('admin/detail_staff/' . $s->id) ?>" class="btn btn-sm btn-info"><i class="fas fa-eye"></i></a>
-                                                            </td>
+                                                            <td><?php echo $a->no; ?></td>
+                                                            <td><?php echo $a->nama; ?></td>
+                                                            <td><?php echo $a->no_staff; ?></td>
+                                                            <td><?php echo $a->tipe; ?></td>
+                                                           
                                                         </tr>
-                                                    <?php } ?> -->
+                                                    <?php } ?>
+                                                    
                                                 </tbody>
                                                 <tfoot>
                                                     <tr>
-                                                        <th>No</th>
+                                                    <th>No</th>
                                                         <th>Nama Staff</th>
+                                                        <th>No Staff</th>
+                                                        <th>Jumlah Hadir</th>
+                                                        <th>Jumlah Absen</th>
+                                                        <th>Terlambat Datang</th>
+                                                        <th>Pulang Lebih Awal</th>
+                                                        <th>Pulang Terlambat</th>
+                                                        <th>Lama Kerja</th>
+                                                        <th>Uang Makan</th>
                                                         <th>Aksi</th>
                                                     </tr>
                                                 </tfoot>
