@@ -45,7 +45,29 @@
         <script src="<?php echo base_url() . '/plugins/bs-custom-file-input/bs-custom-file-input.min.js' ?>"></script>
         <script>
             $(function() {
-                $("#example1").DataTable();
+                $("#example1").DataTable({
+                    initComplete: function() {
+                        this.api().columns().every(function() {
+                            var column = this;
+                            var select = $('<select><option value=""></option></select>')
+                                .appendTo($(column.footer()).empty())
+                                .on('change', function() {
+                                    var val = $.fn.dataTable.util.escapeRegex(
+                                        $(this).val()
+                                    );
+
+                                    column
+                                        .search(val ? '^' + val + '$' : '', true, false)
+                                        .draw();
+                                });
+
+                            column.data().unique().sort().each(function(d, j) {
+                                select.append('<option value="' + d + '">' + d + '</option>')
+                            });
+                        });
+                    }
+                });
+
                 $('#example2').DataTable({
                     "paging": true,
                     "lengthChange": false,
