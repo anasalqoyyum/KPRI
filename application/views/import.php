@@ -38,8 +38,8 @@
               <!-- /.card-header -->
               <div class="card-body">
                 <div class="row">
+                  <?php echo $this->session->flashdata('notif') ?>
                   <div class="col-md-8 offset-2">
-                    <?php echo $this->session->flashdata('notif') ?>
                     <form method="POST" action="<?php echo base_url() ?>import/upload" enctype="multipart/form-data">
                       <div class="form-group">
                         <input name="userfile" type="file" class="custom-file-input <?php echo form_error('datask') ? 'is-invalid' : '' ?>" id="exampleInputFile"></input>

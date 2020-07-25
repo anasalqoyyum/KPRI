@@ -31,7 +31,8 @@ class Import extends CI_Controller
 
             $data_upload = $this->upload->data();
 
-            $excelreader     = new PHPExcel_Reader_Excel2007();
+            // $excelreader     = new PHPExcel_Reader_Excel2007();
+            $excelreader     = PHPExcel_IOFactory::createReader('Excel5');
             $loadexcel         = $excelreader->load('excel/' . $data_upload['file_name']); // Load file yang telah diupload ke folder excel
             $sheet             = $loadexcel->getActiveSheet()->toArray(null, true, true, true);
 
